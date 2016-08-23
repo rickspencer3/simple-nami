@@ -1,0 +1,15 @@
+{
+  "id": "com.rickspencer3.helloworld",
+  "name": "com.rickspencer3.helloworld",
+  "extends": ["Component"],
+  "revision": 0,
+  "author": {"name": "Rick Spencer", "url": "https://example.com"},
+  "version": "1.0.0",
+  "properties": {
+    "text":{"type": "text", "default":"foo\n"}
+  },
+  "exports": {
+  },
+  "installation": {
+  }
+}
