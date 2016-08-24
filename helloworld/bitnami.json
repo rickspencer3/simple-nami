@@ -1,6 +1,6 @@
 {
-  "id": "com.rickspencer3.helloworld",
-  "name": "com.rickspencer3.helloworld",
+  "id": "helloworld",
+  "name": "helloworld",
   "extends": ["Component"],
   "revision": 0,
   "author": {"name": "Rick Spencer", "url": "https://example.com"},

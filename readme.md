@@ -1,8 +1,8 @@
 ```
 $ docker build -t nami .
-$ docker run -it -v path/m:/m nami /bin/bash
+$ docker run -it -v path/helloworld:/m helloworld /bin/bash
 
-# cd m/helloworld
+# cd /helloworld
 # harpoon install .
 # cat /opt/bitnami/com.rickspencer3.helloworld/helloworld.txt
 foo
