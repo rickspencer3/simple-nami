@@ -73,7 +73,7 @@ This file provides a different value for the text property. In this file, the va
 
 ##Use default values
 ```
-$ docker run -it -v /Users/rick/nami/helloworld:/helloworld nami /bin/bash
+$ docker run -it -v /Users/rick/nami/helloworld:/helloworld nami
 # cd helloworld/
 # harpoon install .
 # cat /opt/bitnami/helloworld/helloworld.txt
@@ -82,7 +82,7 @@ foo
 
 ##Supply a value directly from the command line
 ```
-$ docker run -it -v /Users/rick/nami/helloworld:/helloworld nami /bin/bash
+$ docker run -it -v /Users/rick/nami/helloworld:/helloworld nami
 # cd helloworld/
 # harpoon install . --text=bar
 # cat /opt/bitnami/helloworld/helloworld.txt
@@ -92,7 +92,7 @@ bar
 ##Use magic environment variable
 Environment variables named COMPENT_COMPONENTNAME_VARIABLENAME will "just work"
 ```
-$ docker run -it -v /Users/rick/nami/helloworld:/helloworld nami /bin/bash
+$ docker run -it -v /Users/rick/nami/helloworld:/helloworld nami
 # export COMPONENT_HELLOWORLD_TEXT="fazzle"
 # harpoon install .
 # cat /opt/bitnami/helloworld/helloworld.txt
@@ -101,7 +101,7 @@ fazzle
 
 ##Use the hard coded inputs from a file
 ```
-$ docker run -it -v /Users/rick/nami/helloworld:/helloworld nami /bin/bash
+$ docker run -it -v /Users/rick/nami/helloworld:/helloworld nami
 # cd helloworld/
 # harpoon install . --inputs-file hc-inputs.json
 # cat /opt/bitnami/helloworld/
@@ -111,7 +111,7 @@ hard-coded
 
 ##Use environment variables via inputs
 ```
-$ docker run -it -v /Users/rick/nami/helloworld:/helloworld nami /bin/bash
+$ docker run -it -v /Users/rick/nami/helloworld:/helloworld nami
 # export T2=$'bing'
 # harpoon install . --inputs-file env-inputs.json
 # cat /opt/bitnami/helloworld/helloworld.txt
