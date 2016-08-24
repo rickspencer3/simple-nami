@@ -89,15 +89,6 @@ $ docker run -it -v /Users/rick/nami/helloworld:/helloworld nami /bin/bash
 bar
 ```
 
-##Supply a value via envars on the command line
-```
-$ docker run -it -v /Users/rick/nami/helloworld:/helloworld nami /bin/bash
-# export T1='baz'
-# cd helloworld/
-# harpoon install . --text=$T1
-# cat /opt/bitnami/helloworld/helloworld.txt
-baz
-```
 ##Use magic environment variable
 Environment variables named COMPENT_COMPONENTNAME_VARIABLENAME will "just work"
 ```
@@ -107,7 +98,6 @@ $ docker run -it -v /Users/rick/nami/helloworld:/helloworld nami /bin/bash
 # cat /opt/bitnami/helloworld/helloworld.txt
 fazzle
 ```
-
 
 ##Use the hard coded inputs from a file
 ```
