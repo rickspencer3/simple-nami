@@ -26,10 +26,4 @@ ENV PATH=/opt/bitnami/node/bin:/opt/bitnami/python/bin:$PATH \
 
 ## STACKSMITH-END: Modifications below this line will be unchanged when regenerating
 
-# Node base template
-COPY . /app
-WORKDIR /app
-
-RUN npm install
-
-CMD ["node"]
+CMD ["/bin/bash"]
